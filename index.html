@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Lógico</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
+</head>
+<body>
+    <form name="form">
+        <div class="container">
+            <h4>Digite abaixo no campo, até qual número deseja sabe</h4>
+            <h6>Apenas 0 a 100</h6>
+            <p><input type="text" name="texto" placeholder="Digite o último número" size="41">
+                <br><br>
+                <!-- nome 'area', para futura buscar metodo 'this' -->
+                <textarea rows="6" cols="31" name="area" readonly></textarea>
+                <br><br>
+                <!-- Pegando valor dentro do 'form', com name 'area' e 'texto', pegando referência deles -->
+                <input type="button" value="Apenas Números Pares"
+                    onclick="ValidandoPar(this.form.area,this.form.texto)">
+                <input type="button" value="Apenas Números Impares"
+                    onclick="ValidandoImpar(this.form.area,this.form.texto)">
+        </div>
+    </form>
+</body>
+
+</html>
